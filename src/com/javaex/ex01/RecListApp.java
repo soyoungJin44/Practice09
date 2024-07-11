@@ -54,9 +54,7 @@ public class RecListApp {
 		
 		System.out.println("#모든 사각형의 넓이 합 출력=======================================");
 		//모든 사각형의 넓이 합 구하기 코드 작성
-		for(int i=0; i<rList.size();i++) {
-			sum += rList.get(i).area();
-		}
+		
 		
 		//모든 사각형의 합 출력
 		System.out.println("모든 사각형의 넓이는 " + sum + " 입니다.");
@@ -69,7 +67,9 @@ public class RecListApp {
 	public static void listAllDraw(List<Rectangle> list) {
 		
 		//내용작성 
-		list.toString();
+		for(int i=0; i<list.size();i++) {
+			list.get(i).draw();
+		}
 	
 	}
 	
